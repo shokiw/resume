@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Kishonan Pushpanthan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\LARGE Kishonan Pushpanthan} \\ \vspace{3pt}
+    \textbf{\large Full-Stack Software Developer} \\ \vspace{10pt}
+    \small +33 6 12 58 36 70 $|$ \href{mailto:kishopsh@gmail.com}{\underline{kishopsh@gmail.com}} $|$
+    \href{https://linkedin.com/in/pkisho}{\underline{linkedin.com/in/pkisho}} $|$
+    \href{https://github.com/shokiw}{\underline{github.com/shokiw}}
+\end{center}
+
+%-----------PROFILE-----------
+\section{Profile}
+\small{
+Versatile Full-Stack Software Developer with 3+ years of experience in building scalable web applications and cloud-native solutions. Expertise in TypeScript, React, and AWS technologies, with a strong background in DevOps practices. 
+Seeking challenging freelance missions or permanent roles that leverage my skills in full-stack development, cloud computing, and software architecture. 
+}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, JavaScript, SQL} \\
+     \textbf{Frameworks}{: React, Next.js, Nest.js, Expo, Hono, AdonisJS} \\
+     \textbf{Tools}{: Amazon Web Services (Lambda, DynamoDB, S3, SQS, API Gateway, and others), Infrastructure as Code (CDK, SST), Git, Docker, CI/CD (GitHub Actions), Node.js, Monorepo, Neovim, Bun, Vite, Prisma, Tailwind CSS, TanStack libraries, Effect, PostgreSQL, Railway, Figma} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Epitech, IT Expertise and Innovation}{2018 -- 2023}
+      {Diploma in Systems Architecture, Minor in Project Management}{Paris, France}
+    \resumeSubheading
+      {Ionis STM}{2020 -- 2021}
+      {Teaching and Coaching Certification}{Paris, France}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full-Stack Software Developer}{Sept. 2023 -- Sept. 2024}
+      {Koala}{Paris, France}
+      \resumeItemListStart
+        \resumeItem{Developed new features for a high-traffic Nest.js backend using TypeScript and Hexagonal Architecture, improving system performance and maintainability while handling thousands of daily API requests.}
+        \resumeItem{Gained expertise in monorepo setups using tools like Turborepo, enhancing project organization and build efficiency. Deepened knowledge of CI/CD practices and Infrastructure as Code (IaC) principles, contributing to improved development workflows.}
+        \resumeItem{Performed data analysis tasks utilizing ETL processes, leveraging AWS Athena for querying large datasets and Kinesis for real-time data streaming, contributing to data-driven decision-making.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-Stack Software Developer}{2021 -- 2023}
+      {Casap}{Paris, France}
+      \resumeItemListStart
+      \resumeItem{Developed and maintained serverless backend solutions utilizing AWS Lambda, API Gateway, and DynamoDB, leveraging TypeScript for improved code quality and maintainability.}
+      \resumeItem{Engineered responsive and performant frontend applications using React, GraphQL, and TypeScript, focusing on optimal user experience.}
+      \resumeItem{Implemented and optimized CI/CD workflows using GitHub Actions, and managed cloud infrastructure as code with AWS CDK, enhancing deployment efficiency.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Software Developer}{2020 -- 2021}
+      {Createrocks}{Paris, France}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented a robust back-office dashboard using the MERN (MongoDB, Express.js, React, Node.js) stack, enhancing the company's administrative capabilities.}
+        \resumeItem{Contributed significantly to the migration from a legacy Cordova app to a modern React Native application, helping improve performance, cross-platform compatibility, and user experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Contributions to Open-Source Projects} \emph{Hono, Effect, Naive UI} }{}
+          \resumeItem{Contributed to open-source projects by submitting pull requests to address issues. Actively engaged with project creators and communities through Discord and Slack to propose solutions and improvements.}
+      \resumeProjectHeading
+          {\textbf{Lounch} \emph{Ongoing side project}}{}
+            \resumeItem{Developing Lounch, a SaaS tool for creating launch campaigns and accelerating user acquisition, inspired by indie maker communities on X. Utilizing full-stack development skills to bring a product from concept to reality.}
+    \resumeSubHeadingListEnd
+
+\end{document}
